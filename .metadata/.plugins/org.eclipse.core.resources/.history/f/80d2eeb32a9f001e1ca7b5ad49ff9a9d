@@ -1,0 +1,12 @@
+package com.tech;
+
+public class testD {
+
+	public static void main(String[] args) {
+
+		int a[] = { 11, 1, 2, 34, 5, 22, 22, 44, 32, 1, 1, 2, 34, 44, 22, 77, 44, 22, 44, 22 };
+
+		System.out.println(a.toString());
+	}
+
+}

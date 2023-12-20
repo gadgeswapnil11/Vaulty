@@ -1,0 +1,34 @@
+package com.tech;
+
+import java.util.HashMap;
+import java.util.Map;
+import java.util.Map.Entry;
+
+public class testD {
+
+	public static void main(String[] args) {
+
+		int a[] = { 11, 1, 2, 34, 5, 22, 22, 44, 32, 1, 1, 2, 34, 44, 22, 77, 44, 22, 44, 22 };
+		Map<Integer, Integer> hm = new HashMap<Integer, Integer>();
+
+		for (int b : a) {
+
+			if (hm.containsKey(b)) {
+				hm.put(b, hm.get(b) + 1);
+			} else {
+				hm.put(b, 1);
+			}
+		}
+
+		for (Entry<Integer, Integer> h1 : hm.entrySet()) {
+
+			if (h1.getValue() == 1) {
+
+				System.out.println(h1.getKey());
+			}
+
+		}
+
+	}
+
+}

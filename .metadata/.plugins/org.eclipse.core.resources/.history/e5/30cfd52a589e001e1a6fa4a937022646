@@ -1,0 +1,12 @@
+package com.tech;
+
+public class StudentData {
+	String fname;
+	String lname;
+	String email;
+	String course;
+	String city;
+	String uid;
+	String pass;
+
+}
