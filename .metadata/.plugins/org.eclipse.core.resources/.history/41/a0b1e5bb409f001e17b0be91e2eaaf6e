@@ -40,7 +40,7 @@ public class UpdateOne extends HttpServlet {
 			}
 
 		} catch (Exception e) {
-			System.out.println("Exception is Here UpdateOneJava " + e.getMessage());
+			// TODO: handle exception
 		}
 
 	}

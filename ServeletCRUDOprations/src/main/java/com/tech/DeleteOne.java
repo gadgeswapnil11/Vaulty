@@ -17,11 +17,9 @@ public class DeleteOne extends HttpServlet {
 	protected void service(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
 
 		String fname = req.getParameter("name");
-		
-		
+
 		try {
-			
-			
+
 			Class.forName("com.mysql.cj.jdbc.Driver"); // Driver name
 			Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/admissionprocess_db", "root",
 					"root");
@@ -37,9 +35,9 @@ public class DeleteOne extends HttpServlet {
 				rd.forward(req, resp);
 			}
 
+		} catch (Exception e) {
 
-			
-		}catch (Exception e) {
+			System.out.println("Exception is Here " + e.getMessage());
 		}
 
 	}
